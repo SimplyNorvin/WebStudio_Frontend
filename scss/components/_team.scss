@@ -1,0 +1,112 @@
+@use '../utils/variables' as *;
+.team {
+  padding: 94px 0;
+  background-color: #f4f5fa;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+      0 2px 1px rgba(0, 0, 0, 0.2);
+    max-width: 270px;
+    text-align: center;
+    padding-bottom: 30px;
+    overflow: hidden;
+  }
+
+  &__picture {
+    display: block;
+    width: 100%;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__name {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__role {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #757575;
+  }
+
+  &__social-list {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__social-item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+
+  &__social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition: fill 0.3s ease;
+
+    .team__social-item:hover &,
+    .team__social-item:focus & {
+      fill: #fff;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    &__list {
+      justify-content: space-between;
+    }
+
+    &__item {
+      max-width: none;
+      width: calc(50% - 15px);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    &__item {
+      width: 100%;
+      max-width: 450px;
+    }
+  }
+}

@@ -1,0 +1,166 @@
+@use '../utils/variables' as *;
+
+.modal-overlay {
+  z-index: 1000;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  max-width: 528px;
+  opacity: 0;
+  position: relative;
+
+  &--visible {
+    opacity: 1;
+  }
+
+  &__close-btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid $close-btn-border;
+
+    &:hover .modal-window__close-icon {
+      fill: $accent-color;
+    }
+  }
+
+  &__close-icon {
+    height: 11px;
+    width: 11px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    color: $txt-color;
+    margin-bottom: 20px;
+  }
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  &__label-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: $light-txt-color;
+    padding: 10px 0;
+    text-align: left;
+  }
+
+  &__field {
+    display: flex;
+    max-width: 448px;
+    height: 40px;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    align-items: center;
+    transition: border 0.2s;
+
+    &:hover {
+      border-color: $accent-color;
+
+      .modal-form__icon {
+        fill: $accent-color;
+      }
+    }
+  }
+
+  &__input {
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: left;
+    padding-right: 10px;
+  }
+
+  &__textarea {
+    outline: none;
+    border: 1px solid #21212133;
+    height: 120px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    resize: none;
+    text-align: left;
+
+    &:hover {
+      border-color: $accent-color;
+    }
+  }
+
+  &__icon {
+    height: 18px;
+    width: 18px;
+    margin: 11px 12px;
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $light-txt-color;
+    margin-bottom: 20px;
+
+    input {
+      margin-right: 5px;
+    }
+  }
+
+  &__contract-link {
+    color: $accent-color;
+    text-decoration: underline;
+    padding-left: 5px;
+  }
+
+  &__submit {
+    color: white;
+    background-color: $accent-color;
+    border: none;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 52px;
+    line-height: 30px;
+    letter-spacing: 6%;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .modal-window {
+    max-width: 450px;
+  }
+
+  .modal-form__checkbox {
+    font-size: 12px;
+  }
+}

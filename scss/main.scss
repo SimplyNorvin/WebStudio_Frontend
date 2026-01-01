@@ -1,0 +1,15 @@
+@use './utils/variables';
+@use './utils/placeholders';
+@use './utils/mixins';
+@use './base/reset';
+@use './base/base';
+@use './components/header';
+@use './components/mobile-menu';
+@use './components/banner';
+@use './components/modal';
+@use './components/details';
+@use './components/doing';
+@use './components/team';
+@use './components/footer';
+@use './components/our-clients';
+@use './components/portfolio';

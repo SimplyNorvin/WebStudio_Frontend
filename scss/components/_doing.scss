@@ -1,0 +1,49 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+@use '../utils/mixins' as *;
+
+.doing {
+	&__title {
+		@extend %titles;
+	}
+	padding-bottom: 94px;
+	background-color: $white-color;
+	&__list {
+		display: flex;
+		gap: 30px;
+	}
+
+	&__item {
+		position: relative;
+	}
+
+	&__overlay {
+		background-color: rgba(47, 48, 58, 0.8);
+		position: absolute;
+		top: 224px;
+		width: 370px;
+		height: 70px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__description {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 14px;
+		letter-spacing: 0.03em;
+		color: $white-color;
+	}
+
+	&__image {
+		width: 370px;
+		height: 294px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.doing {
+		display: none;
+	}
+}

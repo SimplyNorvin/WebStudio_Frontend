@@ -1,0 +1,17 @@
+@use '../utils/variables' as *;
+
+%titles {
+	text-align: center;
+	color: $txt-color;
+	font-size: 36px;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+	%titles {
+		font-size: 28px;
+		padding-bottom: 30px;
+	}
+}

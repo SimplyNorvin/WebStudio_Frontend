@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Web Studio</title>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container container">
+				<a href="index.html" class="header__logo logo anim" data-aos="fade-down">
+					<span class="logo-accent">Web</span> Studio
+				</a>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item ">
+							<a href="#" class="header__link anim active" data-aos="fade-down"
+								>Studio</a
+							>
+						</li>
+						<li class="header__item">
+							<a
+								href="portfolio.html"
+								class="header__link anim"
+								data-aos="fade-down"
+								>Portfolio</a
+							>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link anim" data-aos="fade-down""
+								>Contacts</a
+							>
+						</li>
+					</ul>
+					<ul class="header__contacts">
+						<li class="header__contacts-item">
+							<a
+								href="mailto:@devstudio.com"
+								class="header__contacts-link anim"
+								data-aos="fade-down"
+							>
+								<svg class="header__mail-icon anim" data-aos="fade-down">
+									<use href="./images/symbol-defs.svg#icon-envelope"></use>
+								</svg>
+								info@devstudio.com
+							</a>
+						</li>
+						<li class="header__contacts-item">
+							<a
+								href="tel:+380961111111"
+								class="header__contacts-link anim"
+								data-aos="fade-down"
+							>
+								<svg class="header__phone-icon anim" data-aos="fade-down">
+									<use href="./images/symbol-defs.svg#icon-mobile-phone"></use>
+								</svg>
+								+38 096 111 11 11
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<button
+					type="button"
+					class="header__menu anim"
+					data-mobile-toggle
+					aria-label="Toggle menu"
+				>
+					<svg class="header__menu-icon anim" width="40px" height="40px">
+						<use href="./images/symbol-defs.svg#icon-menu"></use>
+					</svg>
+				</button>
+				<div class="mobile-menu modal is-hidden" data-mobile-menu>
+					<button
+						type="button"
+						class="mobile-menu__close anim"
+						data-mobile-close
+						aria-label="Close menu"
+					>
+						<svg class="mobile-menu__close-icon anim">
+							<use href="./images/symbol-defs.svg#icon-cross"></use>
+						</svg>
+					</button>
+
+					<ul class="mobile-menu__list">
+						<li class="mobile-menu__item">
+							<a href="index.html" class="mobile-menu__link anim">Studio</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="portfolio.html" class="mobile-menu__link anim"
+								>Portfolio</a
+							>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="#" class="mobile-menu__link anim">Contacts</a>
+						</li>
+					</ul>
+
+					<ul class="mobile-menu__contact-list">
+						<li class="mobile-menu__contact-item">
+							<a
+								href="tel:+380961111111"
+								class="mobile-menu__contact-number anim"
+							>
+								+38 096 111 11 11
+							</a>
+						</li>
+						<li class="mobile-menu__contact-item">
+							<a
+								href="mailto:info@devstudio.com"
+								class="mobile-menu__contact-email anim"
+							>
+								info@devstudio.com
+							</a>
+						</li>
+					</ul>
+
+					<ul class="mobile-menu__social-list">
+						<li class="mobile-menu__social-item">
+							<p class="mobile-menu__social-name anim">Instagram</p>
+						</li>
+						<li class="mobile-menu__social-item">
+							<p class="mobile-menu__social-name anim">Twitter</p>
+						</li>
+						<li class="mobile-menu__social-item">
+							<p class="mobile-menu__social-name anim">Facebook</p>
+						</li>
+						<li class="mobile-menu__social-item">
+							<p class="mobile-menu__social-name anim">LinkedIn</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+			<h1 class="hero__title" data-aos="flip-up">EFFECTIVE SOLUTIONS FOR<br />YOUR BUSINESS</h1>
+			<button data-aos="flip-up" type="button" class="hero__btn" data-modal-open>
+				Order a service
+			</button>
+				<div class="modal-overlay modal-overlay--hidden" data-modal>
+					<div class="modal-window modal-window--visible">
+						<button
+							type="button"
+							class="modal-window__close-btn"
+							data-modal-close
+						>
+							<svg class="modal-window__close-icon">
+								<use href="./images/symbol-defs.svg#icon-cross"></use>
+							</svg>
+						</button>
+
+						<h2 class="modal-window__title">
+							Leave your details and we will call you back
+						</h2>
+
+						<form class="modal-form">
+							<p class="modal-form__label-text">Name</p>
+							<label class="modal-form__field">
+								<svg class="modal-form__icon">
+									<use href="./images/symbol-defs.svg#icon-username"></use>
+								</svg>
+								<input class="modal-form__input" type="text" name="Name" />
+							</label>
+
+							<p class="modal-form__label-text">Phone</p>
+							<label class="modal-form__field">
+								<svg class="modal-form__icon">
+									<use href="./images/symbol-defs.svg#icon-mobile-phone"></use>
+								</svg>
+								<input class="modal-form__input" type="email" name="email" />
+							</label>
+							<p class="modal-form__label-text">Email</p>
+							<label class="modal-form__field">
+								<svg class="modal-form__icon">
+									<use href="./images/symbol-defs.svg#icon-mail"></use>
+								</svg>
+								<input class="modal-form__input" type="email" name="email" />
+							</label>
+
+							<p class="modal-form__label-text">Comment</p>
+							<label class="modal-form__comment-field">
+								<textarea
+									class="modal-form__textarea"
+									name="comment"
+								></textarea>
+							</label>
+
+								<label class="modal-form__checkbox">
+									<input type="checkbox" />
+									I agree with the newsletter and accept
+									<span class="modal-form__contract-link">Terms of Service</span>
+								</label>								<button class="modal-form__submit" type="submit">
+									Send
+								</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="details">
+				<div class="details__container container">
+					<ul class="details__list">
+						<li class="details__item">
+							<article class="details-card" data-aos="flip-up">
+								<h3
+									class="details-card__title details-card__title--attention"
+									data-aos="fade-up"
+								>
+									Attention to details
+								</h3>
+							<p class="details-card__description" data-aos="fade-up">
+								Ideological considerations and the beginning of everyday work
+								from forming a position.
+							</p>
+							</article>
+						</li>
+
+						<li class="details__item">
+							<article class="details-card" data-aos="flip-up">
+								<h3
+									class="details-card__title details-card__title--punctuality"
+									data-aos="fade-up"
+								>
+									Punctuality
+								</h3>
+							<p class="details-card__description" data-aos="fade-up">
+								The task of the organization, especially the framework and place
+								of training personnel pulls
+							</p>
+							</article>
+						</li>
+
+						<li class="details__item">
+							<article class="details-card" data-aos="flip-up">
+								<h3
+									class="details-card__title details-card__title--planning"
+									data-aos="fade-up"
+								>
+									Planning
+								</h3>
+							<p class="details-card__description" data-aos="fade-up">
+								Equally, consultation with a wide range of assets is largely
+								determined by
+							</p>
+							</article>
+						</li>
+
+						<li class="details__item">
+							<article class="details-card" data-aos="flip-up">
+								<h3
+									class="details-card__title details-card__title--tech"
+									data-aos="fade-up"
+								>
+									Modern technologies
+								</h3>
+							<p class="details-card__description" data-aos="fade-up">
+								The significance of these problems is so obvious that the
+								implementation of planned tasks
+							</p>
+							</article>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="doing">
+				<div class="container doing__container">
+					<h2 class="doing__title" data-aos="fade-up">What we do</h2>
+					<ul class="doing__list">
+						<li class="doing__item" data-aos="zoom-out-right">
+						<div class="doing__overlay">
+							<p class="doing__description">Desktop applications</p>
+						</div>
+							<picture class="doing__picture">
+								<source
+									media="(min-width: 769px)"
+									srcset="
+										./images/desktop/job1.jpg       1x,
+										./images/desktop-2x/job1-2x.jpg 2x
+									"
+								/>
+								<img
+									class="doing__image"
+									src="./images/desktop/job1.jpg"
+									alt="Person Doing Job 1"
+								/>
+							</picture>
+						</li>
+						<li class="doing__item" data-aos="zoom-in-up">
+						<div class="doing__overlay">
+							<p class="doing__description">Mobile applications</p>
+						</div>
+							<picture class="doing__picture">
+								<source
+									media="(min-width: 769px)"
+									srcset="
+										./images/desktop/job2.jpg       1x,
+										./images/desktop-2x/job2-2x.jpg 2x
+									"
+								/>
+								<img
+									src="./images/desktop/job2.jpg"
+									alt="Person Doing Job 2"
+									class="doing__image"
+								/>
+							</picture>
+						</li>
+						<li class="doing__item" data-aos="zoom-out-left">
+						<div class="doing__overlay">
+							<p class="doing__description">Design solutions</p>
+						</div>
+							<picture class="doing__picture">
+								<source
+									media="(min-width: 769px)"
+									srcset="
+										./images/desktop/job3.jpg       1x,
+										./images/desktop-2x/job3-2x.jpg 2x
+									"
+								/>
+								<img
+									src="./images/desktop/job3.jpg"
+									alt="Person Doing Job 3"
+									class="doing__image"
+								/>
+							</picture>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="team">
+				<div class="team__container container">
+					<h2 class="team__title" data-aos="fade-down">Our team</h2>
+
+					<ul class="team__list">
+						<li class="team__item" data-aos="fade-up">
+							<picture class="team__picture">
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+										./images/desktop/teamimg1-desktop.jpg       1x,
+										./images/desktop-2x/teamimg1-desktop-2x.jpg 2x
+									"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/tablet/teamimg1-tablet.jpg       1x,
+										./images/tablet-2x/teamimg1-tablet-2x.jpg 2x
+									"
+								/>
+								<img
+									src="./images/mobile/teamimg1-mobile.jpg"
+									alt="Our team"
+									class="team__image"
+								/>
+							</picture>
+
+							<h4 class="team__name" data-aos="fade-up">Igor Demyanenko</h4>
+							<p class="team__role" data-aos="fade-up">Product Designer</p>
+
+							<ul class="team__social-list">
+								<li class="team__social-item anim" data-aos="fade-up">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-instagram"></use>
+									</svg>
+								</li>
+								<li class="team__social-item anim" data-aos="fade-up">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-twitter"></use>
+									</svg>
+								</li>
+								<li class="team__social-item anim" data-aos="fade-up">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</li>
+								<li class="team__social-item anim" data-aos="fade-up">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-linkedin"></use>
+									</svg>
+								</li>
+							</ul>
+						</li>
+
+						<li class="team__item" data-aos="fade-down">
+							<picture class="team__picture">
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+										./images/desktop/teamimg2-desktop.jpg       1x,
+										./images/desktop-2x/teamimg2-desktop-2x.jpg 2x
+									"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/tablet/teamimg2-tablet.jpg       1x,
+										./images/tablet-2x/teamimg2-tablet-2x.jpg 2x
+									"
+								/>
+								<img
+									src="./images/mobile/teamimg2-mobile.jpg"
+									alt="Our team"
+									class="team__image"
+								/>
+							</picture>
+
+							<h4 class="team__name" data-aos="fade-down">Olga Repina</h4>
+							<p class="team__role" data-aos="fade-down">Frontend Developer</p>
+
+							<ul class="team__social-list">
+								<li class="team__social-item anim" data-aos="fade-down">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-instagram"></use>
+									</svg>
+								</li>
+								<li class="team__social-item anim" data-aos="fade-down">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-twitter"></use>
+									</svg>
+								</li>
+								<li class="team__social-item anim" data-aos="fade-down">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</li>
+								<li class="team__social-item anim" data-aos="fade-down">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-linkedin"></use>
+									</svg>
+								</li>
+							</ul>
+						</li>
+
+						<li class="team__item" data-aos="fade-down">
+							<picture class="team__picture">
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+										./images/desktop/teamimg3-desktop.jpg       1x,
+										./images/desktop-2x/teamimg3-desktop-2x.jpg 2x
+									"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/tablet/teamimg3-tablet.jpg       1x,
+										./images/tablet-2x/teamimg3-tablet-2x.jpg 2x
+									"
+								/>
+								<img
+									src="./images/mobile/teamimg3-mobile.jpg"
+									alt="Our team"
+									class="team__image"
+								/>
+							</picture>
+
+							<h4 class="team__name" data-aos="fade-down">Nikolai Tarasov</h4>
+							<p class="team__role" data-aos="fade-down">Marketing</p>
+
+							<ul class="team__social-list">
+								<li class="team__social-item anim" data-aos="fade-down">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-instagram"></use>
+									</svg>
+								</li>
+								<li class="team__social-item anim" data-aos="fade-down">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-twitter"></use>
+									</svg>
+								</li>
+								<li class="team__social-item anim" data-aos="fade-down">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</li>
+								<li class="team__social-item anim" data-aos="fade-down">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-linkedin"></use>
+									</svg>
+								</li>
+							</ul>
+						</li>
+
+						<li class="team__item" data-aos="fade-up">
+							<picture class="team__picture">
+								<source
+									media="(min-width: 1200px)"
+									srcset="
+										./images/desktop/teamimg4-desktop.jpg       1x,
+										./images/desktop-2x/teamimg4-desktop-2x.jpg 2x
+									"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/tablet/teamimg4-tablet.jpg       1x,
+										./images/tablet-2x/teamimg4-tablet-2x.jpg 2x
+									"
+								/>
+								<img
+									src="./images/mobile/teamimg4-mobile.jpg"
+									alt="Our team"
+									class="team__image"
+								/>
+							</picture>
+
+							<h4 class="team__name" data-aos="fade-up">Mikhail Ermakov</h4>
+							<p class="team__role" data-aos="fade-up">UI Designer</p>
+
+							<ul class="team__social-list">
+								<li class="team__social-item anim" data-aos="fade-up">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-instagram"></use>
+									</svg>
+								</li>
+								<li class="team__social-item anim" data-aos="fade-up">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-twitter"></use>
+									</svg>
+								</li>
+								<li class="team__social-item anim" data-aos="fade-up">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</li>
+								<li class="team__social-item anim" data-aos="fade-up">
+									<svg class="team__social-icon anim">
+										<use href="./images/symbol-defs.svg#icon-linkedin"></use>
+									</svg>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="our-clients">
+				<div class="container">
+					<h2 class="our-clients__title anim" data-aos="fade-up">
+						Loyal Clients
+					</h2>
+					<ul class="our-clients__list">
+						<li class="our-clients__item anim" data-aos="fade-up">
+							<a href="" class="our-clients__link anim" data-aos="fade-up">
+								<svg class="our-clients__icon anim">
+									<use href="./images/symbol-defs.svg#icon-first-client"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="our-clients__item anim">
+							<a href="" class="our-clients__link anim" data-aos="fade-up">
+								<svg class="our-clients__icon anim" data-aos="fade-up">
+									<use href="./images/symbol-defs.svg#icon-second-client"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="our-clients__item anim">
+							<a href="" class="our-clients__link anim" data-aos="fade-up">
+								<svg class="our-clients__icon anim" data-aos="fade-up">
+									<use href="./images/symbol-defs.svg#icon-third-client"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="our-clients__item anim">
+							<a href="" class="our-clients__link anim" data-aos="fade-up">
+								<svg class="our-clients__icon anim" data-aos="fade-up">
+									<use href="./images/symbol-defs.svg#icon-fourth-client"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="our-clients__item anim">
+							<a href="" class="our-clients__link anim" data-aos="fade-up">
+								<svg class="our-clients__icon anim" data-aos="fade-up">
+									<use href="./images/symbol-defs.svg#icon-fifth-client"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="our-clients__item anim">
+							<a href="" class="our-clients__link anim" data-aos="fade-up">
+								<svg class="our-clients__icon anim" data-aos="fade-up">
+									<use href="./images/symbol-defs.svg#icon-sixth-client"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container footer__container">
+				<div class="footer-left">
+					<div class="footer__address-wrapper">
+						<a href="index.html" class="footer__logo"
+							><span class="footer__logo-span">Web</span>Studio</a
+						>
+						<address class="footer__address">
+							<ul class="footer__address-list">
+							<li class="footer__address-item">
+								<a
+									href="https://goo.gl/maps/LNZbK8tX5sq8bWxk8"
+									class="footer__address-link footer__address--add"
+									>Kyiv, Lesya Ukrainka Prospect, 26</a
+								>
+							</li>
+								<li class="footer__address-item">
+									<a href="mailto:@devstudio.com" class="footer__address-link"
+										>info@devstudio.com</a
+									>
+								</li>
+								<li class="footer__address-item">
+									<a href="tel:+380961111111" class="footer__address-link"
+										>+38 096 111 11 11</a
+									>
+								</li>
+							</ul>
+						</address>
+					</div>
+					<div class="footer__wrapper">
+						<h3 class="footer__list-title">JOIN US</h3>
+						<ul class="footer__list">
+							<li class="footer__list-item anim">
+								<a href="" class="footer__list-link anim">
+									<svg class="footer__list-icon anim">
+										<use href="./images/symbol-defs.svg#icon-instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__list-item anim">
+								<a href="" class="footer__list-link anim">
+									<svg class="footer__list-icon anim">
+										<use href="./images/symbol-defs.svg#icon-twitter"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__list-item anim">
+								<a href="" class="footer__list-link anim">
+									<svg class="footer__list-icon anim">
+										<use href="./images/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__list-item anim">
+								<a href="" class="footer__list-link anim">
+									<svg class="footer__list-icon anim">
+										<use href="./images/symbol-defs.svg#icon-linkedin"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__form-wrapper">
+					<form class="footer__form">
+						<label class="footer__form-label">
+							<h3 class="footer__form-title">Subscribe to our newsletter</h3>
+							<input
+								type="email"
+								class="footer__form-input"
+								placeholder="Email"
+							/>
+						</label>
+						<button type="submit" class="footer__form-button">
+							Subscribe
+							<svg class="footer__form-icon">
+								<use href="./images/symbol-defs.svg#icon-footer-button"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./modal.js"></script>
+		<script src="./menu.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>

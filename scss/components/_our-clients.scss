@@ -1,0 +1,67 @@
+@use '../utils/variables' as *;
+@use '../utils/placeholders' as *;
+@use '../utils/mixins' as *;
+
+.our-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    @extend %titles;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  &__link {
+    border: 1px solid;
+    border-color: $icons-color;
+    border-radius: 4px;
+    padding: 16px 31px;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      border-color: $accent-color;
+    }
+
+    &:hover .our-clients__icon {
+      fill: $accent-color;
+    }
+  }
+
+  &__icon {
+    fill: $icons-color;
+    width: 106px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .our-clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__list {
+      row-gap: 30px;
+    }
+
+    &__link {
+      padding: 16px 60px;
+      max-width: 226px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .our-clients {
+    &__link {
+      padding: 16px 52px;
+      max-width: 210px;
+    }
+  }
+}
